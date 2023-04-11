@@ -253,7 +253,7 @@ function deep(...argsarr: any) {
   // to this empty object.
   argsarr.unshift({})
 
-  return DefaultsDeep.apply(null, argsarr)
+  return DefaultsDeep(...argsarr)
 }
 
 
